@@ -1,5 +1,7 @@
 package com.cqveman.suspicious_substances;
 
+import com.cqveman.suspicious_substances.effect.ModEffects;
+import com.cqveman.suspicious_substances.potion.ModPotions;
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,5 +12,7 @@ public class SuspiciousSubstances implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModEffects.initialize();
+        ModPotions.initialize();
     }
 }

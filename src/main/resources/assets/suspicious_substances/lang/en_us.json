@@ -1,0 +1,9 @@
+{
+  "effect.suspicious_substances.boneless": "Boneless",
+
+  "item.minecraft.potion.effect.boneless_potion": "Boneless Potion",
+  "item.minecraft.splash_potion.effect.boneless_potion": "Boneless Splash Potion",
+  "item.minecraft.lingering_potion.effect.boneless_potion": "Boneless Lingering Potion",
+
+  "item.minecraft.tipped_arrow.effect.boneless_potion": "Arrow of Boneless"
+}
