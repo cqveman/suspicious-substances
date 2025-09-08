@@ -33,5 +33,8 @@ public class ModPotions {
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(Potions.AWKWARD, Items.BONE, BONELESS_POTION);
         });
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.CHEST, MRBEAST_GIVEAWAY_POTION);
+        });
     }
 }
