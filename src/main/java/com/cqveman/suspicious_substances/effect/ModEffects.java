@@ -9,7 +9,12 @@ import net.minecraft.registry.entry.RegistryEntry;
 import net.minecraft.util.Identifier;
 
 public class ModEffects {
-    public static final RegistryEntry<StatusEffect> BONELESS = register("boneless", new BonelessEffect(StatusEffectCategory.HARMFUL, 16777200));
+    public static final RegistryEntry<StatusEffect> BONELESS = register(
+            "boneless", new BonelessEffect(StatusEffectCategory.HARMFUL, 16777200)
+    );
+    public static final RegistryEntry<StatusEffect> MRBEAST_GIVEAWAY = register(
+            "mrbeast_giveaway", new MrBeastGiveawayEffect(StatusEffectCategory.HARMFUL, 2265050)
+    );
 
     private static RegistryEntry<StatusEffect> register(String name, StatusEffect statusEffect) {
         return Registry.registerReference(Registries.STATUS_EFFECT, Identifier.of(SuspiciousSubstances.MOD_ID, name), statusEffect);
