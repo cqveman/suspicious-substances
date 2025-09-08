@@ -3,6 +3,7 @@ package com.cqveman.suspicious_substances.potion;
 import com.cqveman.suspicious_substances.SuspiciousSubstances;
 import com.cqveman.suspicious_substances.effect.ModEffects;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
+import net.minecraft.entity.effect.InstantStatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
@@ -15,7 +16,11 @@ import net.minecraft.util.Identifier;
 public class ModPotions {
     public static final RegistryEntry<Potion> BONELESS_POTION = register(
             "boneless_potion",
-            new Potion("boneless_potion", new StatusEffectInstance(ModEffects.BONELESS, 90*20, 0))
+            new Potion("boneless_potion", new StatusEffectInstance(ModEffects.BONELESS, 90*20))
+    );
+    public static final RegistryEntry<Potion> MRBEAST_GIVEAWAY_POTION = register(
+            "mrbeast_giveaway_potion",
+            new Potion("mrbeast_giveaway_potion", new StatusEffectInstance(ModEffects.MRBEAST_GIVEAWAY,1))
     );
 
     private static RegistryEntry<Potion> register(String name, Potion potion) {
