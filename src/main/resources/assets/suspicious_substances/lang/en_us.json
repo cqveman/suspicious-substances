@@ -5,5 +5,13 @@
   "item.minecraft.splash_potion.effect.boneless_potion": "Splash Potion of Boneless",
   "item.minecraft.lingering_potion.effect.boneless_potion": "Lingering Potion of Boneless",
 
-  "item.minecraft.tipped_arrow.effect.boneless_potion": "Arrow of Boneless"
+  "item.minecraft.tipped_arrow.effect.boneless_potion": "Arrow of Boneless",
+
+  "effect.suspicious_substances.mrbeast_giveaway": "MrBeast Giveaway",
+
+  "item.minecraft.potion.effect.mrbeast_giveaway_potion": "Potion of MrBeast Giveaway",
+  "item.minecraft.splash_potion.effect.mrbeast_giveaway_potion": "Splash Potion of MrBeast Giveaway",
+  "item.minecraft.lingering_potion.effect.mrbeast_giveaway_potion": "Lingering Potion of MrBeast Giveaway",
+
+  "item.minecraft.tipped_arrow.effect.mrbeast_giveaway_potion": "Arrow of MrBeast Giveaway"
 }
