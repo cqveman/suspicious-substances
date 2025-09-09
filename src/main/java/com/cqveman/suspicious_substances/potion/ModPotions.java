@@ -22,6 +22,10 @@ public class ModPotions {
             "mrbeast_giveaway_potion",
             new Potion("mrbeast_giveaway_potion", new StatusEffectInstance(ModEffects.MRBEAST_GIVEAWAY,1))
     );
+    public static final RegistryEntry<Potion> STRONG_MRBEAST_GIVEAWAY_POTION = register(
+            "strong_mrbeast_giveaway_potion",
+            new Potion("mrbeast_giveaway_potion", new StatusEffectInstance(ModEffects.MRBEAST_GIVEAWAY,1, 1))
+    );
 
     private static RegistryEntry<Potion> register(String name, Potion potion) {
         return Registry.registerReference(Registries.POTION, Identifier.of(SuspiciousSubstances.MOD_ID, name), potion);
@@ -35,6 +39,9 @@ public class ModPotions {
         });
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(Potions.AWKWARD, Items.CHEST, MRBEAST_GIVEAWAY_POTION);
+        });
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(ModPotions.MRBEAST_GIVEAWAY_POTION, Items.GLOWSTONE_DUST, STRONG_MRBEAST_GIVEAWAY_POTION);
         });
     }
 }
