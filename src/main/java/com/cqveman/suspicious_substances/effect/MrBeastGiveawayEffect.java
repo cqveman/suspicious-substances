@@ -27,12 +27,15 @@ public class MrBeastGiveawayEffect extends InstantStatusEffect {
         final double yOffset = 0.4;  // upward velocity
         final int count = 12;        // number of TNTs in the circle
 
-        for (int i = 0; i < count; i++) {
+        // if the potion is level 2 or higher, double the amount of tnt around the player
+        double amplifiedEffect = amplifier > 0 ? count * 2 : count;
+
+        for (int i = 0; i < amplifiedEffect; i++) {
 
             // 360° = 2π radians
             // we divide the whole circle by our count to get even parts
             // we multiply by i to get each TNT’s unique position
-            double angle = (2 * Math.PI / count) * i;
+            double angle = (2 * Math.PI / amplifiedEffect) * i;
 
             // in a circle: the x-axis is represented by Cos, and the y-axis is represented by Sin
             double xVel = Math.cos(angle) * radius;
