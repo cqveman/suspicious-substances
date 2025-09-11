@@ -3,7 +3,6 @@ package com.cqveman.suspicious_substances.potion;
 import com.cqveman.suspicious_substances.SuspiciousSubstances;
 import com.cqveman.suspicious_substances.effect.ModEffects;
 import net.fabricmc.fabric.api.registry.FabricBrewingRecipeRegistryBuilder;
-import net.minecraft.entity.effect.InstantStatusEffect;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.item.Items;
 import net.minecraft.potion.Potion;
@@ -26,6 +25,10 @@ public class ModPotions {
             "strong_mrbeast_giveaway_potion",
             new Potion("mrbeast_giveaway_potion", new StatusEffectInstance(ModEffects.MRBEAST_GIVEAWAY,1, 1))
     );
+    public static final RegistryEntry<Potion> TIKTOK_COMPRESSION_POTION = register(
+            "tiktok_compression_potion",
+            new Potion("tiktok_compression_potion", new StatusEffectInstance(ModEffects.TIKTOK_COMPRESSION,90*20))
+    );
 
     private static RegistryEntry<Potion> register(String name, Potion potion) {
         return Registry.registerReference(Registries.POTION, Identifier.of(SuspiciousSubstances.MOD_ID, name), potion);
@@ -42,6 +45,9 @@ public class ModPotions {
         });
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
             builder.registerPotionRecipe(ModPotions.MRBEAST_GIVEAWAY_POTION, Items.GLOWSTONE_DUST, STRONG_MRBEAST_GIVEAWAY_POTION);
+        });
+        FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.GLOWSTONE_DUST, TIKTOK_COMPRESSION_POTION);
         });
     }
 }
