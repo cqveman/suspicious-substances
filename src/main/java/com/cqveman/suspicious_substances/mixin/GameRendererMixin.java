@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class GameRendererMixin {
 
     @Inject(method = "getFov", at = @At("RETURN"), cancellable = true)
-    private void forceFOV(Camera camera, float tickDelta, boolean changingFov, CallbackInfoReturnable<Float> cir) {
+    private void forceFOV(Camera camera, float tickProgress, boolean changingFov, CallbackInfoReturnable<Float> cir) {
         MinecraftClient client = MinecraftClient.getInstance();
         // don't do anything if the player isn't loaded into a world OR the player doesn't have the effect
         if ( client.player == null || ( !client.player.hasStatusEffect(ModEffects.TIKTOK_COMPRESSION) ) ) return;
