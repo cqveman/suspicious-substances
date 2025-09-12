@@ -17,5 +17,5 @@ public class TikTokCompressionEffect extends StatusEffect {
         return true;
     }
 
-    // implementation @ mixin/EntityMixin.java
+    // implementation @ mixin/GameRenderer.java and mixin/AbstractSoundInstanceMixin.java
 }

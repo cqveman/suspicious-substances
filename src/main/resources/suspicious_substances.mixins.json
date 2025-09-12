@@ -4,7 +4,8 @@
   "package": "com.cqveman.suspicious_substances.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "EntityMixin"
+    "EntityMixin",
+    "AbstractSoundInstanceMixin"
   ],
   "client": [
     "GameRendererMixin"
