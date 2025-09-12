@@ -47,7 +47,7 @@ public class ModPotions {
             builder.registerPotionRecipe(ModPotions.MRBEAST_GIVEAWAY_POTION, Items.GLOWSTONE_DUST, STRONG_MRBEAST_GIVEAWAY_POTION);
         });
         FabricBrewingRecipeRegistryBuilder.BUILD.register(builder -> {
-            builder.registerPotionRecipe(Potions.AWKWARD, Items.GLOWSTONE_DUST, TIKTOK_COMPRESSION_POTION);
+            builder.registerPotionRecipe(Potions.AWKWARD, Items.SUGAR, TIKTOK_COMPRESSION_POTION);
         });
     }
 }
