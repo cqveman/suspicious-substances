@@ -1,17 +1,19 @@
 {
   "effect.suspicious_substances.boneless": "Boneless",
+  "effect.suspicious_substances.mrbeast_giveaway": "MrBeast Giveaway",
+  "effect.suspicious_substances.tiktok_compression": "TikTok Compression",
 
   "item.minecraft.potion.effect.boneless_potion": "Potion of Boneless",
   "item.minecraft.splash_potion.effect.boneless_potion": "Splash Potion of Boneless",
   "item.minecraft.lingering_potion.effect.boneless_potion": "Lingering Potion of Boneless",
-
-  "item.minecraft.tipped_arrow.effect.boneless_potion": "Arrow of Boneless",
-
-  "effect.suspicious_substances.mrbeast_giveaway": "MrBeast Giveaway",
-
   "item.minecraft.potion.effect.mrbeast_giveaway_potion": "Potion of MrBeast Giveaway",
   "item.minecraft.splash_potion.effect.mrbeast_giveaway_potion": "Splash Potion of MrBeast Giveaway",
   "item.minecraft.lingering_potion.effect.mrbeast_giveaway_potion": "Lingering Potion of MrBeast Giveaway",
+  "item.minecraft.potion.effect.tiktok_compression_potion": "Potion of TikTok Compression",
+  "item.minecraft.splash_potion.effect.tiktok_compression_potion": "Splash Potion of TikTok Compression",
+  "item.minecraft.lingering_potion.effect.tiktok_compression_potion": "Lingering Potion of TikTok Compression",
 
-  "item.minecraft.tipped_arrow.effect.mrbeast_giveaway_potion": "Arrow of MrBeast Giveaway"
+  "item.minecraft.tipped_arrow.effect.boneless_potion": "Arrow of Boneless",
+  "item.minecraft.tipped_arrow.effect.mrbeast_giveaway_potion": "Arrow of MrBeast Giveaway",
+  "item.minecraft.tipped_arrow.effect.tiktok_compression_potion": "Arrow of TikTok Compression"
 }
