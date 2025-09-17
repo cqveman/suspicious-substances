@@ -16,7 +16,7 @@ public class ModEffects {
             "mrbeast_giveaway", new MrBeastGiveawayEffect(StatusEffectCategory.HARMFUL, 2265050)
     );
     public static final RegistryEntry<StatusEffect> TIKTOK_COMPRESSION = register(
-            "tiktok_compression", new TikTokCompressionEffect(StatusEffectCategory.NEUTRAL, 16711760)
+            "tiktok_compression", new TikTokCompressionEffect(StatusEffectCategory.NEUTRAL, 10070698)
     );
 
     private static RegistryEntry<StatusEffect> register(String name, StatusEffect statusEffect) {
